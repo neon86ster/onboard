@@ -1,0 +1,9 @@
+ require 'csv'
+
+  CSV.open("example.csv", "wb") do |csv|
+    csv << ["cereal", "rating"]
+    csv << ["Honey Bunches of Oats", 3]
+    csv << ["Kashi", 2]
+    csv << ["Cascade Farms", 4]
+    csv << ["That one Banana Cereal from Trader Joes", 5]
+  end
